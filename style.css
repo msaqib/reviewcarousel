@@ -41,3 +41,7 @@ body {
   font-size: 1rem;
   font-style: italic;
 }
+
+#review {
+  font-family: "Open Sans", sans-serif;
+}
