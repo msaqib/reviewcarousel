@@ -1,0 +1,43 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+#loader {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+.review {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review img {
+  clip-path: circle();
+}
+
+#name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+#profession {
+  font-size: 1rem;
+  font-style: italic;
+}
