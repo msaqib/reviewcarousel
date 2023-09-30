@@ -1,3 +1,14 @@
+:root {
+  --review-height: 120px;
+  --clr-light-gray: #f8f8f8;
+  --box-margin: 20px;
+  --review-padding: 2px 0;
+  --review-radius: 10px;
+  --box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  --font-size: 0.875rem;
+  --line-height: 1.5;
+}
+
 *,
 ::after,
 ::before {
@@ -9,8 +20,8 @@ body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
-  line-height: 1.5;
-  font-size: 0.875rem;
+  line-height: var(--line-height);
+  font-size: var(--font-size)
 }
 
 #loader {
@@ -26,6 +37,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: var(--box-shadow);
+  background-color: var(--clr-light-gray);
+  border-radius: var(--review-radius);
+  padding: var(--review-padding);
+  margin: var(--box-margin);
 }
 
 .review img {
@@ -44,4 +60,11 @@ body {
 
 #review {
   font-family: "Open Sans", sans-serif;
+  padding: 2rem;
+  overflow: auto;
+  height: var(--review-height);
+}
+
+h1 {
+  text-align: center;
 }
